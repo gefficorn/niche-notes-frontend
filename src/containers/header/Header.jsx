@@ -1,9 +1,10 @@
 import React from 'react';
 import people from '../../assets/people.png';
 import ai from '../../assets/ai.png';
-import './header.css';
+import UserForm from '../../components/userform/Userform';
+// import './header.css';
 
-const Header = () => (
+function Header() {
   <div className="gpt3__header section__padding" id="home">
     <div className="gpt3__header-content">
       <h1 className="gradient__text">Let&apos;s Build Something amazing with GPT-3 OpenAI</h1>
@@ -20,10 +21,12 @@ const Header = () => (
       </div>
     </div>
 
+    <UserForm />
+
     <div className="gpt3__header-image">
       <img src={ai} />
     </div>
-  </div>
-);
+  </div>;
+}
 
 export default Header;

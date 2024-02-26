@@ -1,9 +1,9 @@
 import React from 'react';
 import { google, slack, atlassian, dropbox, shopify } from './imports';
-import './brand.css';
+// import './brand.css';
 
-const Brand = () => (
-  <div className="gpt3__brand section__padding">
+function Brand() {
+  <div className="nn_brand section__padding">
     <div>
       <img src={google} />
     </div>
@@ -19,7 +19,7 @@ const Brand = () => (
     <div>
       <img src={shopify} />
     </div>
-  </div>
-);
+  </div>;
+}
 
 export default Brand;

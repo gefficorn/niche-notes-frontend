@@ -1,7 +1,7 @@
 import React from 'react';
-import './article.css';
+// import './article.css';
 
-const Article = ({ imgUrl, date, text }) => (
+function Article({ imgUrl, date, text }) {
   <div className="gpt3__blog-container_article">
     <div className="gpt3__blog-container_article-image">
       <img src={imgUrl} alt="blog_image" />
@@ -13,7 +13,7 @@ const Article = ({ imgUrl, date, text }) => (
       </div>
       <p>Read Full Article</p>
     </div>
-  </div>
-);
+  </div>;
+}
 
 export default Article;
