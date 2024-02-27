@@ -1,25 +1,26 @@
 import React from 'react';
 import { google, slack, atlassian, dropbox, shopify } from './imports';
-// import './brand.css';
 
 function Brand() {
-  <div className="nn_brand section__padding">
-    <div>
-      <img src={google} />
+  return (
+    <div className="flex flex-wrap justify-center md:justify-between">
+      <div className="w-1/2 md:w-auto p-2">
+        <img src={google} alt="Google" />
+      </div>
+      <div className="w-1/2 md:w-auto p-2">
+        <img src={slack} alt="Slack" />
+      </div>
+      <div className="w-1/2 md:w-auto p-2">
+        <img src={atlassian} alt="Atlassian" />
+      </div>
+      <div className="w-1/2 md:w-auto p-2">
+        <img src={dropbox} alt="Dropbox" />
+      </div>
+      <div className="w-1/2 md:w-auto p-2">
+        <img src={shopify} alt="Shopify" />
+      </div>
     </div>
-    <div>
-      <img src={slack} />
-    </div>
-    <div>
-      <img src={atlassian} />
-    </div>
-    <div>
-      <img src={dropbox} />
-    </div>
-    <div>
-      <img src={shopify} />
-    </div>
-  </div>;
+  );
 }
 
 export default Brand;

@@ -4,9 +4,10 @@ module.exports = {
   presets: [
     require('./tailwindtemplate.js')
   ],
-  content: ['./containers/**/*.{html,js}',
-            './components/**/*.{html,js}',
-            './*.{html,js}'],
+  content: ['./src/containers/**/*.{html,js}',
+            './src/components/**/*.{html,js}',
+            './src/*.{html,js}',
+            './public/*.{html,js}'],
   theme: {
     extend: {
       spacing: {
